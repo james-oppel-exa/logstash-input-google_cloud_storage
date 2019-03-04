@@ -24,7 +24,8 @@ module LogStash
             'name' => @blob.getName(),
             'md5' => @blob.getMd5(),
             'crc32c' => @blob.getCrc32c(),
-            'generation' => @blob.getGeneration()
+            # 'generation' => @blob.getGeneration()
+            'generation' => ""
           }
         end
 
