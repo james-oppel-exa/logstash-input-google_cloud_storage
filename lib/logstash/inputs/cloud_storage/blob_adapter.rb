@@ -67,7 +67,7 @@ module LogStash
         end
 
         def with_downloaded(temp_directory)
-          temp_file = ::File.join(temp_directory, SecureRandom.uuid)
+          temp_file = ::File.join(temp_directory, SecureRandom.uuid + ::File.extname(name) )
           download_to(temp_file)
 
           yield temp_file
